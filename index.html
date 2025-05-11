@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Phạm Lâm - Blox Fruit Auto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #ff9800;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .banner {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/mnt/data/11c95d18-26de-4240-ab94-9810b4f8a6be.png');
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .banner h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .account-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .account {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .account h3 {
+            margin: 0 0 10px;
+        }
+
+        .account p {
+            margin: 0;
+        }
+
+        .account button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #ff9800;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+        }
+
+        footer a {
+            color: #ff9800;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="/mnt/data/11c95d18-26de-4240-ab94-9810b4f8a6be.png" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="#home">Trang Chủ</a></li>
+                <li><a href="#shop">Shop Acc</a></li>
+                <li><a href="#contact">Liên Hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="banner" id="home">
+        <h1>Chào mừng đến với Shop Phạm Lâm</h1>
+        <p>Hệ thống bán tài khoản Blox Fruit tự động uy tín và chất lượng.</p>
+    </section>
+
+    <section class="content" id="shop">
+        <h2>Danh sách tài khoản</h2>
+        <div class="account-list">
+            <div class="account">
+                <h3>Tài khoản 1</h3>
+                <p>Cấp độ: 1500</p>
+                <p>Giá: 500,000 VNĐ</p>
+                <button>Mua ngay</button>
+            </div>
+            <div class="account">
+                <h3>Tài khoản 2</h3>
+                <p>Cấp độ: 2000</p>
+                <p>Giá: 700,000 VNĐ</p>
+                <button>Mua ngay</button>
+            </div>
+            <!-- Add more accounts as needed -->
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>Liên hệ: <a href="https://www.facebook.com/share/1Aa8yKnu6w/">Facebook</a></p>
+        <p>&copy; 2025 Shop Phạm Lâm. All rights reserved.</p>
+    </footer>
+</body>
+</html>
