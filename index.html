@@ -3,188 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop Phạm Lâm - Blox Fruit Auto</title>
+    <title>Shop Roblox</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
+        .header-bg {
+            background-color: #f44336;
         }
-
-        header {
-            background-color: #ff9800;
-            padding: 15px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        .section-title {
+            color: #f44336;
         }
-
-        header img {
-            height: 60px;
-            border-radius: 10px;
-        }
-
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            gap: 25px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
+        .highlight {
+            color: #f44336;
             font-weight: bold;
-            font-size: 1.1rem;
-            transition: color 0.3s;
-        }
-
-        nav ul li a:hover {
-            color: #333;
-        }
-
-        .banner {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/mnt/data/11c95d18-26de-4240-ab94-9810b4f8a6be.png');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            text-align: center;
-            padding: 60px 20px;
-        }
-
-        .banner h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
-
-        .banner p {
-            font-size: 1.2rem;
-        }
-
-        .content {
-            padding: 40px 20px;
-        }
-
-        .content h2 {
-            text-align: center;
-            margin-bottom: 30px;
-            font-size: 2rem;
-            color: #ff9800;
-        }
-
-        .account-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .account {
-            background: white;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .account:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-        }
-
-        .account h3 {
-            font-size: 1.5rem;
-            margin: 10px 0;
-            color: #333;
-        }
-
-        .account p {
-            margin: 5px 0;
-            font-size: 1rem;
-        }
-
-        .account button {
-            margin-top: 15px;
-            padding: 10px 20px;
-            background-color: #ff9800;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1rem;
-            transition: background-color 0.3s;
-        }
-
-        .account button:hover {
-            background-color: #e68900;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-        }
-
-        footer a {
-            color: #ff9800;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-
-        footer a:hover {
-            color: #ffd54f;
         }
     </style>
 </head>
-<body>
-    <header>
-        <img src="/mnt/data/11c95d18-26de-4240-ab94-9810b4f8a6be.png" alt="Logo">
-        <nav>
-            <ul>
-                <li><a href="#home">Trang Chủ</a></li>
-                <li><a href="#shop">Shop Acc</a></li>
-                <li><a href="#contact">Liên Hệ</a></li>
-            </ul>
-        </nav>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="header-bg p-4 text-white">
+        <div class="container mx-auto flex justify-between items-center">
+            <img src="logo.png" alt="Shop Logo" class="h-10">
+            <nav class="space-x-4">
+                <a href="#" class="hover:underline">Trang chủ</a>
+                <a href="#" class="hover:underline">Mua Robux</a>
+                <a href="#" class="hover:underline">Mua acc Blox Fruit</a>
+                <a href="#" class="hover:underline">Mini Game</a>
+            </nav>
+            <button class="bg-white text-red-600 px-4 py-2 rounded">Đăng nhập</button>
+        </div>
     </header>
 
-    <section class="banner" id="home">
-        <h1>Chào mừng đến với Shop Phạm Lâm</h1>
-        <p>Hệ thống bán tài khoản Blox Fruit tự động uy tín và chất lượng.</p>
-    </section>
+    <!-- Banner -->
+    <div class="container mx-auto mt-6">
+        <div class="relative">
+            <img src="banner.png" alt="Banner" class="w-full rounded-lg shadow-lg">
+            <div class="absolute bottom-4 left-4">
+                <h2 class="text-white text-2xl font-bold">DỊCH VỤ FISCH</h2>
+                <p class="text-white">Chuyên cung cấp tài khoản uy tín và chất lượng</p>
+            </div>
+        </div>
+    </div>
 
-    <section class="content" id="shop">
-        <h2>Danh sách tài khoản</h2>
-        <div class="account-list">
-            <div class="account">
-                <h3>Tài khoản 1</h3>
-                <p>Cấp độ: 1500</p>
-                <p>Giá: 500,000 VNĐ</p>
-                <button>Mua ngay</button>
+    <!-- Top Recharge Section -->
+    <section class="container mx-auto mt-8">
+        <h2 class="text-2xl section-title font-bold">TOP NẠP THẺ THÁNG 5</h2>
+        <div class="grid grid-cols-5 gap-4 mt-4">
+            <div class="bg-white p-4 rounded-lg shadow">
+                <p class="font-bold">1. Phucc12345</p>
+                <p>12.933.205đ</p>
             </div>
-            <div class="account">
-                <h3>Tài khoản 2</h3>
-                <p>Cấp độ: 2000</p>
-                <p>Giá: 700,000 VNĐ</p>
-                <button>Mua ngay</button>
+            <div class="bg-white p-4 rounded-lg shadow">
+                <p class="font-bold">2. dPxUofP7</p>
+                <p>11.000.000đ</p>
             </div>
-            <!-- Add more accounts as needed -->
+            <div class="bg-white p-4 rounded-lg shadow">
+                <p class="font-bold">3. Lòng9999</p>
+                <p>7.520.000đ</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow">
+                <p class="font-bold">4. YYYYYAAAAA</p>
+                <p>6.400.000đ</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow">
+                <p class="font-bold">5. nam01598753</p>
+                <p>4.800.000đ</p>
+            </div>
         </div>
     </section>
 
-    <footer id="contact">
-        <p>Liên hệ: <a href="https://www.facebook.com/share/1Aa8yKnu6w/">Facebook</a></p>
-        <p>&copy; 2025 Shop Phạm Lâm. All rights reserved.</p>
+    <!-- Product Section -->
+    <section class="container mx-auto mt-8">
+        <h2 class="text-2xl section-title font-bold">TÀI KHOẢN LIÊN QUAN</h2>
+        <div class="grid grid-cols-4 gap-6 mt-4">
+            <div class="bg-white rounded-lg shadow overflow-hidden">
+                <img src="product1.png" alt="Product 1" class="w-full">
+                <div class="p-4">
+                    <h3 class="font-bold">MS: UUY1501101</h3>
+                    <p>Roblox: Anime Defenders</p>
+                    <p>Price: 903.000đ</p>
+                    <button class="bg-red-600 text-white px-4 py-2 rounded mt-2">Mua ngay</button>
+                </div>
+            </div>
+            <!-- Repeat for other products -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white p-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Shop Phạm Lâm. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
+
 
